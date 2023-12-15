@@ -1,0 +1,39 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.progress-outer {
+  position: relative;
+  width: 450px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.progress-outer::after {
+  content: attr(data-progress);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.progress-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 24px;
+  height: 100%;
+  width: 30%;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  background: green;
+  overflow: hidden;
+}

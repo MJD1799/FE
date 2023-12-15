@@ -1,0 +1,6 @@
+.folder {
+  display: flex;
+  justify-content: space-between;
+  background: gray;
+  padding: 1rem;
+}

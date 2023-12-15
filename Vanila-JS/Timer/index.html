@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Timer</h1>
+      <div class="timer">
+        <div class="time">
+          <p>Hours</p>
+          <input
+            type="number"
+            placeholder="00"
+            maxlength="2"
+            oninput="this.value=this.value.slice(0,this.maxLength)"
+            class="hour"
+          />
+        </div>
+        :
+        <div class="time">
+          <p>Minutes</p>
+          <input
+            type="number"
+            placeholder="00"
+            maxlength="2"
+            oninput="this.value=this.value.slice(0,this.maxLength)"
+            class="minutes"
+          />
+        </div>
+        :
+        <div class="time">
+          <p>Seconds</p>
+          <input
+            type="number"
+            placeholder="00"
+            maxlength="2"
+            oninput="this.value=this.value.slice(0,this.maxLength)"
+            class="seconds"
+          />
+        </div>
+      </div>
+      <div class="actions">
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

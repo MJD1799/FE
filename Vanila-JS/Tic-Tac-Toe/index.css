@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+.app{
+  display: grid;
+  grid-template-columns: repeat(3,min-content);
+  gap:8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item{
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 36px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.disable{
+ pointer-events: none;
+}
+
+.winner{
+  text-align: center;
+  font-size: 48px;
+}

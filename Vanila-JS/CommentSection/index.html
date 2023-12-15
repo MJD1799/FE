@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comments-box</title>
+  <link rel="stylesheet" href="./index.css">
+  <script type= "module" src="./data.mjs" defer></script>
+  <script type= "module" src="./comment.mjs" defer></script>
+  <script type= "module" src="./index.mjs" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Comment Box</h1>
+    <div class="comment-add">
+      <input type="text" class="comment-box" placeholder="type..."/>
+      <button class="add-comment">Add</button>
+    </div>
+    <h2>Comment History</h2>
+    <div class="comment-list">
+      <div class="comment" id="demo">
+        <span class="comment-author">Author-1</span>
+        <span> | </span>
+        <span class="comment-date">Date-1</span>
+        <p class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quo
+          explicabo consectetur iste nihil quos laboriosam qui alias quae
+          soluta, vero mollitia at neque sed. Temporibus aliquid vitae iusto
+          ut!
+        </p>
+        <div class="actions">
+          <button class="view-replies">---View Replies</button>
+          <button class="edit">Edit</button>
+        </div>
+        <div class="comment-add">
+          <input type="text" class="comment-box" />
+          <button class="add-comment">Add</button>
+        </div>
+        <div class="comment-replies" id="demo-replies">
+          <div class="comment-list">
+            <div class="comment">
+              <span class="comment-author">Author-1</span>
+              <span> | </span>
+              <span class="comment-date">Date-1</span>
+              <p class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quo
+                explicabo consectetur iste nihil quos laboriosam qui alias quae
+                soluta, vero mollitia at neque sed. Temporibus aliquid vitae iusto
+                ut!
+              </p>
+              <div class="actions">
+                <button class="view-replies">---View Replies</button>
+                <button class="reply">Reply</button>
+                <button class="edit">Edit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

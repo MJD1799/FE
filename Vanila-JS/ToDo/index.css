@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.app{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+
+}
+
+.to-do-add-container{
+  padding: 16px;
+  display: flex;
+  gap: 1rem;
+}
+
+.to-do-add-input{
+  padding: 8px;
+  border: 1px solid gray;
+
+}
+
+.to-do-add-btn{
+ padding: 8px;
+ border: none;
+ border-radius: 0.5rem;
+ background: gray;
+}
+
+
+.to-do-list-container,.to-do-inProgress-list-container{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 50%;
+}
+
+.to-do-item{
+  padding: 16px;
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid black;
+}
+
+h3{
+  border-bottom: 1px solid black;
+  padding: 16px;
+}
+
+.list-container{
+  display: flex;
+  gap: 4rem;
+}
+
+.test{
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+}

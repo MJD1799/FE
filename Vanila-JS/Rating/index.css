@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container { 
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.review, .float-review{
+  display: flex;
+  gap: 0.5rem;
+}
+.star {
+  cursor: pointer;
+}
+
+.star-filled {
+  color: yellow;
+}
+
+.float-star {
+  position: relative;
+}
+
+.star-uppar{
+  color: black;
+  vertical-align: top;
+}
+
+.star-below{
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}

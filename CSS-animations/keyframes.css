@@ -1,0 +1,22 @@
+body{
+  background:black;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  background: blue;
+  position: relative;
+  animation-name: try;
+  animation-duration: 4s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes try{
+  0%{background: red;left:0px; top:0px;}
+  25% {background: green;left:400px; top:0px;}
+  50%{background: blueviolet;left:400px; top:400px;}
+  75%{background: brown;left:0px; top:400px;}
+  100%{background: blue;left:0px; top:0px;}
+}

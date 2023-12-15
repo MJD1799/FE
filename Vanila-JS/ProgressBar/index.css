@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.progress-bar{
+  --dynamic-width: 40%;
+  /*padding: 1rem;*/
+  width: 500px;
+  height: 3em;
+  border-radius: 1.5em;
+  background-color: black;
+  position: relative;
+  /*display: flex;
+  align-items: center;*/
+  color: white;
+}
+
+.progress-bar::before{
+  content: attr(data-progress);
+  position: absolute;
+  width: var(--dynamic-width);
+  background-color: darkblue;
+  left: 0.5em;
+  top: 0.5em;
+  bottom: 0.5em;
+  height: calc(100% - 2em);
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  min-width: 1rem;
+  max-width: calc(100% - 2em);
+  padding: 0.5em;
+}

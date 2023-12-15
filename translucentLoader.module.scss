@@ -1,0 +1,7 @@
+@import 'tstyles/component.scss';
+
+
+.translucentLoader {
+  background-color: rgba($color: $white, $alpha: 0.6);
+  z-index: 1001;
+};

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.comment-add{
+    margin-top: 0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.comment-replies {
+  margin-left: 1rem;
+}
+
+.comment {
+  border-left: 1px solid gray;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.content {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.actions {
+  margin-top: 0.5rem 0.5rem;
+}
+
+.comment-replies {
+  display: none;
+}

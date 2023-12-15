@@ -1,0 +1,60 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  
+  height: 100%;
+}
+
+.app{
+height: 100%;
+padding: 0.5rem;
+}
+/*
+.app > *{
+  padding: 8px;
+}*/
+
+
+header{
+  height: 64px;
+  background-color: royalblue;
+  padding: 8px;
+}
+
+.body-container{
+  height: calc(100% - 128px);
+  display: flex;
+}
+.body-container > *{
+  padding: 8px;
+}
+
+nav{
+  background-color: aqua;
+
+  flex: 1 1 10%;
+}
+article{
+  background-color: bisque;
+  flex: 1 1 80%;
+  overflow-y: scroll;
+}
+
+footer{
+  background-color: royalblue;
+  height: 64px;
+  /*margin-bottom: auto;*/
+  padding: 8px;
+}
+
+@media (max-width: 768px){
+  .body-container{
+    flex-direction: column;
+  }
+}
+
+

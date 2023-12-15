@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+}
+
+.box{
+  /*width: 80%;*/
+  height: 250px;
+  width: 250px;
+  border: 1px solid black;
+  background-color: red;
+}
+
+.text-input{
+ /*width: 20%;*/
+  border: none;
+}
