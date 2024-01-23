@@ -10,13 +10,14 @@ body{
   animation-name: try;
   animation-duration: 4s;
   animation-delay: 3s;
-  animation-iteration-count: infinite;
+  /*animation-iteration-count: infinite;*/
+  animation-fill-mode: forwards;
 }
 
 @keyframes try{
-  0%{background: red;left:0px; top:0px;}
-  25% {background: green;left:400px; top:0px;}
-  50%{background: blueviolet;left:400px; top:400px;}
-  75%{background: brown;left:0px; top:400px;}
-  100%{background: blue;left:0px; top:0px;}
+  0%{background: red;left:0px; top:0px; border-radius: 0 0 0 0;}
+  25% {background: green;left:400px; top:0px; border-radius: 50% 0 0 0 ;}
+  50%{background: blueviolet;left:400px; top:400px;border-radius: 50% 50% 0 0 ;}
+  75%{background: brown;left:0px; top:400px;border-radius: 50% 50% 50% 0;}
+  100%{background: blue;left:0px; top:0px;border-radius: 50% 50% 50% 50%;}
 }

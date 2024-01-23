@@ -1,19 +1,19 @@
 Function.prototype.myDebounce = function (delay = 0) {
-  let timerId,result;
+  let timerId, result;
   const context = this;
   console.log("tt:", this);
   return function newer(...args) {
     if (timerId) clearTimeout(timerId);
     timerId = setTimeout(() => {
-        result = context.call(context, ...args);
+      result = context.call(context, ...args);
     }, delay * 1000);
     return result;
   };
 };
 
 const fun = (type) => {
-   console.log("hello", type);
-   return 5;
+  console.log("hello", type);
+  return 5;
 };
 
 const debounced_fun = fun.myDebounce(2);
@@ -40,3 +40,18 @@ console.log(debounced_fun("2"));
 // 		if (callNow) func.apply(context, args);
 // 	};
 // };
+
+
+const myDebounce = (fn, delay, immediate) => {
+  let timerId;
+
+  return function (...args) {
+    const immediateCall = immediate && !timerId;
+    clearTimeout(timerId);
+    timerId = setTimeout(() => {
+      if (!immediate) fn.apply(this, args);
+    }, delay);
+
+    if (immediateCall) return fn.apply(this, args);
+  }
+}
